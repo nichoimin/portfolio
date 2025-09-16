@@ -1,0 +1,289 @@
+body {
+    background-image: url('photos/background.png');
+    background-size: cover;      /* make it fill the screen */
+    background-repeat: no-repeat; /* prevent tiling */
+    
+    
+}
+
+html, body {
+    height: 100%;
+    margin: 0;                 /* remove default gap */
+    overflow: hidden; /* hides scrollbars */
+    cursor: url('photos/laptopCursor.png') 4 4, auto;
+}
+
+@media (orientation: portrait) {
+    body {
+      background-position: top center; /* crop focuses on top in portrait */
+    }
+}
+
+
+
+
+
+p {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size:25px;
+}
+.taskbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: blue;
+}
+.portFolderIcon{
+    height:10%;
+    position: relative;
+    top:20;
+}
+/*portrait folder*/
+.portraitFolder{
+    padding: 10px;
+    width: 80px;
+    position: relative;
+    left: 20%;
+    top: 20%;
+    font-size: 120%;
+}
+.openPortraitFolder{    /*phone mode*/
+    display: none;
+    background-image: url('photos/ContactTest.png');
+    width: 90%;
+    background-size: cover;
+    position: absolute;
+    aspect-ratio: 722/929;
+    left: 7%;
+    top:4%;
+    z-index: 101;
+}
+
+@media (min-width: 1200px) { /*desktop mode*/
+.openPortraitFolder{
+    display: none;
+    background-image: url('photos/openFolder.png');
+    width:65%;
+    background-size: cover;
+    position: absolute;
+    aspect-ratio: 756/537;
+    left: 30%;
+    top:3%;
+    z-index: 100;
+}
+}
+.openPortraitFolder button{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top:0;
+    right:0;
+    background: transparent;
+    border: none;
+    font-size:0;
+}
+/*fashion folder*/
+.fashionFolderIcon{
+    height:10%;
+    position: relative;
+    top:20;
+}
+.fashionFolder{
+    padding: 10px;
+    width: 80px;
+    position: relative;
+    left: 40%;
+    top: 10%;
+    font-size: 120%;
+}
+
+.openFashionFolder{/*phone mode*/
+    display: none;
+    background-image: url('photos/ContactTest.png');
+    width:90%;
+    background-size: cover;
+    position: absolute;
+    aspect-ratio: 722/929;
+    left: 7%;
+    top:4%;
+    z-index: 99;
+}
+@media (min-width: 1200px) { /*desktop mode*/
+.openFashionFolder{
+    display: none;
+    background-image: url('photos/openFolder.png');
+    width:65%;
+    background-size: cover;
+    position: absolute;
+    aspect-ratio: 756/537;
+    left: 25%;
+    top:5%;
+    z-index: 99;
+}
+}
+
+.openFashionFolder button{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top:0;
+    right:0;
+    background: transparent;
+    border: none;
+    font-size:0;
+}
+
+/*events folder*/
+.eventFolderIcon{
+    height:10%;
+    position: relative;
+    top:20;
+}
+.eventFolder{
+    padding: 10px;
+    width: 80px;
+    position: relative;
+    left: 20%;
+    top: 20%;
+    font-size: 120%;
+}
+
+.openEventFolder{/*phone mode*/
+    display: none;
+    background-image: url('photos/ContactTest.png');
+    width:90%;
+    background-size: cover;
+    position: absolute;
+    aspect-ratio: 722/929;
+    left: 7%;
+    top:4%;
+    z-index: 101;
+}
+
+@media (min-width: 1200px) { /*desktop mode*/
+.openEventFolder{
+    display: none;
+    background-image: url('photos/openFolder.png');
+    width:65%;
+    background-size: cover;
+    position: absolute;
+    aspect-ratio: 756/537;
+    left: 27%;
+    top:11%;
+    z-index: 101;
+}
+}
+.openEventFolder button{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top:0;
+    right:0;
+    background: transparent;
+    border: none;
+    font-size:0;
+}
+
+/*contactme folder*/
+.contactGlobeIcon{
+    height:10%;
+    position: relative;
+    top: 42;
+}
+.contactMe{
+    width: 200px;
+    position: relative;
+    left: 60%;
+    bottom:50%;
+    font-size: 120%;
+}
+.openContactMe{
+    display: none;
+    background-image: url('photos/ContactTest.png');
+    width:90%;
+    background-size: cover;
+    position: absolute;
+    aspect-ratio: 722/929;
+    left: 7%;
+    top:4%;
+    z-index: 101;
+}
+
+@media (min-width: 1200px) { /*desktop mode*/
+.openContactMe{
+    display: none;
+    background-image: url('photos/ContactTest.png');
+    width:35%;
+    background-size: cover;
+    position: absolute;
+    aspect-ratio: 722/929;
+    left: 60%;
+    top:4%;
+    z-index: 101;
+}
+}
+.openContactMe button{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top:0;
+    right:0;
+    background: transparent;
+    border: none;
+    font-size:0;
+}
+
+
+
+.wizardPhoto{/*phone mode*/
+    height:65%;
+    position: relative;
+    left:23%;
+    margin-top: 31%;
+}
+
+@media (min-width: 1200px) { /*desktop mode*/
+    .wizardPhoto{
+        height:65%;
+        position: absolute;
+        left:45%;
+        margin-top: 20%;
+    }
+}
+
+
+
+
+
+.fashionPhoto{/*phone mode*/
+    height:47%; 
+    position: relative;
+    left:4.5%;
+    margin-top: 31%;
+}
+
+@media (min-width: 1200px) { /*desktop mode*/
+.fashionPhoto{
+    height:65%; 
+    position: relative;
+    left:29.5%;
+    margin-top: 20%;
+}
+}
+
+.eventPhoto{/*phone mode*/
+    height:65%;
+    position: relative;
+    left:23%;
+    margin-top: 31%;
+}
+
+@media (min-width: 1200px) { /*desktop mode*/
+.eventPhoto{
+    height:65%;
+    position: relative;
+    left:45%;
+    margin-top: 20%;
+}}
