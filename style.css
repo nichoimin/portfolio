@@ -10,7 +10,7 @@ html, body {
     height: 100%;
     margin: 0;                 /* remove default gap */
     overflow: hidden; /* hides scrollbars */
-    cursor: url('photos/laptopCursor.png') 4 4, auto;
+    /*cursor: url('photos/laptopCursor.png') 4 4, auto;*/ /*change cursor image*/
 }
 
 @media (orientation: portrait) {
